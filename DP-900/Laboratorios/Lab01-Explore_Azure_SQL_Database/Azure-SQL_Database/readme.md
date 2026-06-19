@@ -10,14 +10,14 @@
 2. En la parte superior izquierda de la página, selecciona **+ Crear un recurso** (+ Create a resource). En el cuadro de búsqueda de Marketplace, escribe `Azure SQL` y presiona Enter. En los resultados de búsqueda, selecciona **Azure SQL (published by Microsoft)**.
 
 
-![Seleccionar Crear SQL Database](/DP-900/Laboratorios/Lab01-Explore_Azure_SQL_Database/Azure-SQL_Database/imagenes/E1Imagen1.png)
+![Seleccionar Crear SQL Database](imagenes/E1Imagen1.png)
 
 
 
 3. En la página de Azure SQL, selecciona **Crear** (Create). En el mosaico de crear una base de datos, selecciona **Más detalles** (More details) y luego selecciona **Crear base de datos SQL** (Create SQL Database).
 
 
-![Seleccionar Crear SQL Database](/DP-900/Laboratorios/Lab01-Explore_Azure_SQL_Database/Azure-SQL_Database/imagenes/E1Imagen2.png)
+![Seleccionar Crear SQL Database](imagenes/E1Imagen2.png)
 
 
    > **Consejo:** Una base de datos SQL única es la opción más sencilla de configurar y es perfecta para aprender.
@@ -30,13 +30,13 @@
    * **Nombre de la base de datos (Database name):** `Dealership`.
 
 
-![Configuración Básica de la Base de Datos](ruta/de/la/imagen_03.png)
+![Configuración Básica de la Base de Datos](imagenes/E1Imagen3.png)
 
 
    * **Servidor (Server):** Selecciona **Crear nuevo** (Create new) y dale un nombre único en cualquier ubicación disponible. Usa la autenticación de SQL (SQL authentication), especifica tu nombre como administrador del servidor y crea una contraseña compleja. Selecciona **Aceptar** (OK).
 
 
-![Configuración del Servidor SQL](ruta/de/la/imagen_04.png)
+![Configuración del Servidor SQL](imagenes/E1Imagen4.png)
 
 
    * **¿Desea usar el grupo elástico de SQL? (Want to use SQL elastic pool?):** No.
@@ -48,7 +48,7 @@
 5. Selecciona **Siguiente: Redes >** (Next: Networking >). En conectividad de red, selecciona **Punto de conexión público** (Public endpoint). En las reglas de firewall, establece en **Sí** (Yes) tanto "Permitir que los servicios y recursos de Azure accedan a este servidor" como "Agregar dirección IP del cliente actual".
 
 
-![Configuración de Red y Firewall](ruta/de/la/imagen_05.png)
+![Configuración de Red y Firewall](imagenes/E1Imagen5.png)
 
 
    > **Consejo:** Estas configuraciones abren el acceso justo para que puedas conectarte a la base de datos durante el laboratorio.
@@ -57,13 +57,13 @@
 6. Selecciona **Siguiente: Seguridad >** (Next: Security >) y asegúrate de que la opción "Habilitar Microsoft Defender para SQL" esté configurada en **Ahora no** (Not now).
 
 
-![Configuración de Seguridad](ruta/de/la/imagen_06.png)
+![Configuración de Seguridad](imagenes/E1Imagen6.png)
 
 
 7. Selecciona **Siguiente: Configuración adicional >** (Next: Additional settings >). Asegúrate de que la opción "Usar datos existentes" (Use existing data) sea **Ninguno** (None).
 
 
-![Configuración de Datos Adicionales - Ninguno](ruta/de/la/imagen_07.png)
+![Configuración de Datos Adicionales - Ninguno](imagenes/E1Imagen7.png)
 
 
    > **Importante:** Dejar esto en "Ninguno" te da una base de datos completamente vacía.
@@ -72,13 +72,13 @@
 8. Selecciona **Revisar + crear** (Review + create), revisa la configuración y luego selecciona **Crear** (Create).
 
 
-![Revisar y Crear](ruta/de/la/imagen_08.png)
+![Revisar y Crear](imagenes/E1Imagen8.png)
 
 
 9. Espera unos minutos a que se complete la implementación y selecciona **Ir al recurso** (Go to resource).
 
 
-![Despliegue completado](ruta/de/la/imagen_09.png)
+![Despliegue completado](imagenes/E1Imagen9.png)
 
 
 ## Fase 2: Crear las tablas de la base de datos y añadir datos de muestra
@@ -87,7 +87,7 @@
 1. En el menú izquierdo de la base de datos, selecciona **Editor de consultas (versión preliminar)** (Query editor). En la pestaña de **Autenticación de SQL**, introduce el usuario y contraseña del administrador que creaste, y selecciona **Conectar**.
 
 
-![Autenticación SQL en Query Editor](ruta/de/la/imagen_10.png)
+![Autenticación SQL en Query Editor](imagenes/E1Imagen10.png)
 
 
    *(Nota: Si ves un error sobre tu IP, selecciona el enlace en el mensaje para permitir el acceso a tu IP y vuelve a conectarte).*
@@ -96,7 +96,7 @@
 2. Selecciona **+ Nueva consulta** (+ New query). Pega el siguiente código SQL para crear la tabla de Fabricantes (Manufacturer) y Vehículos (Vehicle).
 
 
-![Panel de Nueva Consulta](ruta/de/la/imagen_11.png)
+![Panel de Nueva Consulta](imagenes/E1Imagen11.png)
 
 
 ```sql
