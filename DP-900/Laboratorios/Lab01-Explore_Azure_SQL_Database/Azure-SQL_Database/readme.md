@@ -138,8 +138,8 @@ INSERT INTO Vehicle (VehicleID, ModelName, ManufacturerID, ModelYear, BodyType, 
 (107, 'Elantra',     4, 2024, 'Sedan',      22300.00),
 (108, 'Tucson',      4, 2023, 'SUV',        29600.00);
 Ejecución de INSERT INTO completada
-
-## Fase 3: Consultar los datos
+```
+# ## Fase 3: Consultar los datos
 Ahora puedes usar comandos SQL SELECT para recuperar y explorar los datos. Prueba ejecutando cada uno de estos bloques:
 1. Ver todos los datos de los vehículos:
 SELECT * FROM Vehicle;
