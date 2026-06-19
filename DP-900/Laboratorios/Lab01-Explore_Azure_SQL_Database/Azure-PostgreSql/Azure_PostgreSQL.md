@@ -9,7 +9,7 @@ En el portal, seleccionamos Crear un recurso.
 Buscamos Azure Database for PostgreSQL y seleccionamos la opción Azure Database for PostgreSQL.
 * Hacemos clic en Crear.
 
-![Acceso al Marketplace y selección de Azure Database for PostgreSQL](/imagenes/E3Imagen01.png)
+![Acceso al Marketplace y selección de Azure Database for PostgreSQL](imagenes/E3Imagen01.png)
 
 ### Paso 3: Configuración del recurso
 * Rellenamos los campos con las opciones que deseemos, como:
