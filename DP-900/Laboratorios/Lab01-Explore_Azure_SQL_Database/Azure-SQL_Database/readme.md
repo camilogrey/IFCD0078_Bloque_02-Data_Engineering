@@ -10,13 +10,14 @@
 2. En la parte superior izquierda de la página, selecciona **+ Crear un recurso** (+ Create a resource). En el cuadro de búsqueda de Marketplace, escribe `Azure SQL` y presiona Enter. En los resultados de búsqueda, selecciona **Azure SQL (published by Microsoft)**.
 
 
-![Seleccionar Crear SQL Database](DP-900/Laboratorios/Lab01-Explore_Azure_SQL_Database/Azure-SQL_Database/imagenes/E1Imagen1.png)
+![Seleccionar Crear SQL Database](/DP-900/Laboratorios/Lab01-Explore_Azure_SQL_Database/Azure-SQL_Database/imagenes/E1Imagen1.png)
+
 
 
 3. En la página de Azure SQL, selecciona **Crear** (Create). En el mosaico de crear una base de datos, selecciona **Más detalles** (More details) y luego selecciona **Crear base de datos SQL** (Create SQL Database).
 
 
-![Seleccionar Crear SQL Database](ruta/de/la/imagen_02.png)
+![Seleccionar Crear SQL Database](/DP-900/Laboratorios/Lab01-Explore_Azure_SQL_Database/Azure-SQL_Database/imagenes/E1Imagen2.png)
 
 
    > **Consejo:** Una base de datos SQL única es la opción más sencilla de configurar y es perfecta para aprender.
