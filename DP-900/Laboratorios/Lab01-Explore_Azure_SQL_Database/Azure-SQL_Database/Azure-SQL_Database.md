@@ -31,6 +31,7 @@ A través de la herramienta nativa **Query editor (preview)**, se realizan inter
 * **Eliminación en Cascada:** Al concluir la validación técnica, se ejecuta la eliminación directa del **Grupo de Recursos** original.
 * **Prevención de Costes:** Esta acción elimina de forma simultánea e irreversible la base de datos, el servidor lógico y las configuraciones de red asociadas, garantizando que **no queden recursos residuales activos** generando cargos en la suscripción.
 
+# EJECUCIÓN LABORATORIO
 # Fase 1: Aprovisionar un recurso de Azure SQL Database
 "Aprovisionar" simplemente significa crear y configurar un nuevo recurso. En esta sección, crearás tu servidor de base de datos y una base de datos vacía para alojar tus datos.
 
@@ -98,7 +99,7 @@ A través de la herramienta nativa **Query editor (preview)**, se realizan inter
 
 ![Panel de Nueva Consulta](imagenes/E1Imagen11.png)
 ![Panel de Nueva Consulta](imagenes/E1Imagen12.png)
-## Fase 2: Crear las tablas de la base de datos y añadir datos de muestra
+# Fase 2: Crear las tablas de la base de datos y añadir datos de muestra
 
 
 1. En el menú izquierdo de la base de datos, selecciona **Editor de consultas (versión preliminar)** (Query editor). En la pestaña de **Autenticación de SQL**, introduce el usuario y contraseña del administrador que creaste, y selecciona **Conectar**.
@@ -165,7 +166,7 @@ Ejecución de INSERT INTO completada
 
 ![Panel de Nueva Consulta](imagenes/E1Imagen16.png)
 
-# ## Fase 3: Consultar los datos
+# Fase 3: Consultar los datos
 Ahora puedes usar comandos SQL SELECT para recuperar y explorar los datos. Prueba ejecutando cada uno de estos bloques:
 1. Ver todos los datos de los vehículos:
 ```sql
