@@ -1,6 +1,7 @@
 # Azure-SQL Database
 # DP-900 - Lab 01 - Explorar Azure SQL Database
-
+# Descripción del Ejercicio
+El laboratorio describe el ciclo de vida completo del aprovisionamiento, configuración e interacción con una base de datos relacional nativa de la nube mediante **Azure SQL Database**. El documento guía al usuario en la creación de una infraestructura optimizada para el control de costes en entornos de desarrollo, el establecimiento de perímetros de seguridad mediante reglas de firewall de IP, y la manipulación de datos relacionales a través de sentencias estructuradas SQL (DDL, DML y DQL) ejecutadas directamente desde el portal de Azure. El proceso concluye con el desmantelamiento atómico de la infraestructura para garantizar una gobernanza financiera eficiente dentro de la suscripción de Azure.
 
 ## Fase 1: Aprovisionar un recurso de Azure SQL Database
 "Aprovisionar" simplemente significa crear y configurar un nuevo recurso. En esta sección, crearás tu servidor de base de datos y una base de datos vacía para alojar tus datos.
