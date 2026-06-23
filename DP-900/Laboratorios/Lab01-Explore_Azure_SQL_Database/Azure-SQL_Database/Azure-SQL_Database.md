@@ -143,7 +143,7 @@ Ejecución de CREATE TABLE completada
 ![Panel de Nueva Consulta](imagenes/E1Imagen15.png)
 
 Borra el código anterior, pega el siguiente bloque para insertar datos en las tablas, y selecciona ▷ Ejecutar (Run):
-```
+```sql
 INSERT INTO Manufacturer (ManufacturerID, ManufacturerName, Country) VALUES
 (1, 'Toyota',        'Japan'),
 (2, 'Ford',          'United States'),
