@@ -170,17 +170,23 @@ Ahora puedes usar comandos SQL SELECT para recuperar y explorar los datos. Prueb
 1. Ver todos los datos de los vehículos:
 SELECT * FROM Vehicle;
 Resultado de SELECT * FROM Vehicle
+![Panel de Nueva Consulta](imagenes/E1Imagen17.png)
 2. Ver solo columnas específicas:
 SELECT ModelName, BodyType, ListPrice
 FROM Vehicle;
 Resultado de SELECT de columnas específicas
+![Panel de Nueva Consulta](imagenes/E1Imagen18.png)
+
 3. Filtrar y ordenar datos (vehículos de menos de $30,000):
 SELECT ModelName, BodyType, ListPrice
 FROM Vehicle
 WHERE ListPrice < 30000
 ORDER BY ListPrice;
 Resultado de SELECT con WHERE y ORDER BY
+![Panel de Nueva Consulta](imagenes/E1Imagen19.png)
+
 4. Combinar datos de ambas tablas (JOIN) para ver el modelo junto al país de su fabricante:
+```
 SELECT
     v.ModelName,
     m.ManufacturerName,
@@ -190,13 +196,27 @@ FROM Vehicle AS v
 INNER JOIN Manufacturer AS m
     ON v.ManufacturerID = m.ManufacturerID
 ORDER BY m.ManufacturerName;
+```
 Resultado de consulta con INNER JOIN
+![Panel de Nueva Consulta](imagenes/E1Imagen20.png)
+5.    Tómate un momento para experimentar. Intenta cambiar el precio en la cláusula WHERE o ordenar los resultados por otra columna y, a continuación, vuelve a ejecutar la consulta para ver cómo cambian los resultados.
+
+![Panel de Nueva Consulta](imagenes/E1Imagen21.png)
+
 Cuando termines, cierra el panel del editor de consultas y descarta los cambios si se te solicita.
-![Panel de Nueva Consulta](imagenes/E1Imagen17.png)
+
 # ## Fase 4: Limpieza de recursos
 Para no incurrir en costes adicionales, asegúrate de eliminar los recursos que creaste.
 En el portal de Azure, navega hasta el grupo de recursos que creaste al inicio del laboratorio.
 Selecciona Eliminar grupo de recursos (Delete resource group).
+![Panel de Nueva Consulta](imagenes/E1Imagen22.png)
 Eliminar grupo de recursos en el portal de Azure
 Confirma escribiendo el nombre del grupo de recursos y selecciona Eliminar (Delete). Esto eliminará la base de datos, el servidor y todo su contenido en un solo paso.
+![Panel de Nueva Consulta](imagenes/E1Imagen23.png)
 Confirmación de eliminación
+
+![Panel de Nueva Consulta](imagenes/E1Imagen24.png)
+
+> Consejo: Al eliminar el grupo de recursos, se eliminan la base de datos, el servidor y todo lo demás que contenga en un solo paso. Esta es la forma más sencilla de asegurarte de que no quede nada en ejecución que suponga un gasto.
+En este ejercicio práctico, has aprovisionado una base de datos SQL de Azure, has creado tus propias tablas, has añadido datos de ejemplo del sector de la automoción y has realizado consultas mediante SQL. ¡Ya has dado tus primeros pasos con los datos relacionales en la nube!
+
