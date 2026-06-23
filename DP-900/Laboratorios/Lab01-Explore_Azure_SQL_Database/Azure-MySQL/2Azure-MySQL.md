@@ -1,6 +1,36 @@
 # DP-900 - Lab 01 - Azure Database for MySQL
 ## Provisionar un recurso de Azure Database for MySQL
 
+## Resumen Ejercicio
+Este laboratorio detalla el proceso integral para el aprovisionamiento, la administración técnica y la gobernanza de una solución relacional de código abierto mediante el servicio Azure Database for MySQL. 
+A través de una implementación basada en la arquitectura de Servidor Flexible (Flexible Server), se demuestra cómo desplegar un motor de base de datos relacional optimizado para entornos de desarrollo y pruebas con un estricto control de costes.
+El documento abarca la configuración del plano de control, la seguridad perimetral mediante reglas de cortafuegos por dirección IP, el escalado dinámico de recursos computacionales y de almacenamiento, así como las estrategias fundamentales de continuidad de negocio (respaldos y alta disponibilidad) y gobernanza (roles IAM y bloqueos de seguridad).
+### 1. Despliegue de Arquitectura Flexible y Control de Costes
+* **Selección del Motor:** Se aprovisiona el servicio administrado **Azure Database for MySQL** seleccionando específicamente la opción de **Servidor Flexible**. Esta arquitectura ofrece un control máximo sobre la base de datos, escalado de IOPS y ventanas de mantenimiento personalizadas.
+* **Parámetros del Entorno de Pruebas:** Para optimizar el presupuesto, se parametriza la carga de trabajo como **Dev/Test**. Esto asigna un nivel de computación de tipo **Burstable (B1ms)** con 1 vCore, 2 GiB de memoria RAM y un disco base de 20 GiB con IOPS de escalado automático.
+* **Disponibilidad Estándar:** En esta configuración de bajo coste, la alta disponibilidad se mantiene desactivada, operando bajo un Acuerdo de Nivel de Servicio (**SLA**) base del **99.9%**.
+
+### 2. Seguridad, Perímetro y Conectividad
+* **Firewall Basado en IP:** Se implementa un control de acceso perimetral en la capa de red agregando la **dirección IP pública del cliente actual** a las reglas del cortafuegos. Esto restringe el puerto nativo de MySQL (`3306`) protegiendo el punto de conexión público de tráfico externo no autorizado.
+* **Cifrado Obligatorio:** El servicio impone por defecto conexiones seguras mediante el protocolo **TLS/SSL (versión 1.2)**, requiriendo el uso de certificados para encriptar los datos en tránsito.
+* **Cadenas de Conexión:** La sección *Connect* unifica y proporciona las *connection strings* formateadas de forma nativa para su integración en aplicaciones desarrolladas en Java, .NET, PHP y Python.
+
+### 3. Ajustes del Motor y Escalabilidad Dinámica
+* **Escalado Vertical Activo:** A través del panel de *Compute + storage*, la plataforma permite modificar en caliente el nivel de cómputo (migrar de *Burstable* a *General Purpose* o *Memory Optimized*) y expandir la capacidad del disco físico según la demanda de la carga de trabajo.
+* **Variables del Servidor:** El menú *Server parameters* expone la interfaz de gestión de las variables globales del motor (equivalentes al archivo local `my.cnf` o `my.ini`), permitiendo tunear búferes, zonas horarias, conjuntos de caracteres (`utf8mb4`) y modos SQL directamente desde la consola de Azure.
+* **Réplicas de Lectura:** El sistema permite configurar arquitecturas distribuidas (*Read Replicas*) en la misma región o en regiones cruzadas para desviar las consultas analíticas o de reportes y liberar de carga al servidor principal.
+
+### 4. Resiliencia, Mantenimiento y Continuidad de Negocio
+* **Actualizaciones Automatizadas:** El apartado *Maintenance* permite delegar o programar la ventana de tiempo semanal para la aplicación de parches de seguridad críticos y actualizaciones del sistema operativo por parte de Microsoft, mitigando el impacto en producción.
+* **Failover en Espera:** En niveles superiores a *Burstable*, el menú *High availability* permite activar la redundancia de zona, configurando de forma transparente un servidor en estado de espera (*standby server*) en una zona física diferente para conmutación automática en caso de caída.
+* **Recuperación Point-in-Time (PITR):** Se gestiona la retención de las copias de seguridad automáticas diarias (ajustables de 7 a 35 días), proporcionando la capacidad de restaurar la base de datos a cualquier segundo específico del pasado mediante la creación de un nuevo servidor lógico.
+
+### 5. Gobernanza y Plano de Control
+* **Control de Acceso (IAM):** Se centraliza la seguridad administrativa del recurso mediante el control de acceso basado en roles de Azure (RBAC), limitando los privilegios de modificación o lectura mediante los roles de Propietario (*Owner*), Colaborador (*Contributor*) y Lector (*Reader*).
+* **Bloqueos contra Accidentes:** Se implementa el uso de *Locks* a nivel de infraestructura para prevenir la eliminación accidental (*Delete lock*) o la manipulación indebida (*Read-only lock*) de los servidores de datos empresariales.
+
+## Ejecución Ejercicio
+
 ### Paso 1: Crear un nuevo recurso
 * Ingresa al portal de Azure. Portal de Azure.
 * Selecciona + Crear un recurso en la esquina superior izquierda.
