@@ -228,6 +228,7 @@ INNER JOIN Manufacturer AS m
 WHERE ListPrice > 30000
 ORDER BY m.ManufacturerName;
 ```
+Resultado de consulta
 
 ![Panel de Nueva Consulta](imagenes/E1Imagen21.png)
 
