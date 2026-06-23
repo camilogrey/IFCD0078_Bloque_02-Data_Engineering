@@ -32,7 +32,7 @@ A través de la herramienta nativa **Query editor (preview)**, se realizan inter
 * **Prevención de Costes:** Esta acción elimina de forma simultánea e irreversible la base de datos, el servidor lógico y las configuraciones de red asociadas, garantizando que **no queden recursos residuales activos** generando cargos en la suscripción.
 
 # EJECUCIÓN LABORATORIO
-# # Fase 1: Aprovisionar un recurso de Azure SQL Database
+# Fase 1: Aprovisionar un recurso de Azure SQL Database
 "Aprovisionar" simplemente significa crear y configurar un nuevo recurso. En esta sección, crearás tu servidor de base de datos y una base de datos vacía para alojar tus datos.
 
 
@@ -235,7 +235,7 @@ Resultado de consulta
 
 Cuando termines, cierra el panel del editor de consultas y descarta los cambios si se te solicita.
 
-# ## Fase 4: Limpieza de recursos
+# Fase 4: Limpieza de recursos
 Para no incurrir en costes adicionales, asegúrate de eliminar los recursos que creaste.
 En el portal de Azure, navega hasta el grupo de recursos que creaste al inicio del laboratorio.
 Selecciona Eliminar grupo de recursos (Delete resource group).
