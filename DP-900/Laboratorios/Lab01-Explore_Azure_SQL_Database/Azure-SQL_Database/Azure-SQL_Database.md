@@ -41,12 +41,12 @@ A través de la herramienta nativa **Query editor (preview)**, se realizan inter
 
 ![Seleccionar Crear SQL Database](imagenes/E1Imagen1.png)
 
-
+![Seleccionar Crear SQL Database](imagenes/E1Imagen2.png)
 
 3. En la página de Azure SQL, selecciona **Crear** (Create). En el mosaico de crear una base de datos, selecciona **Más detalles** (More details) y luego selecciona **Crear base de datos SQL** (Create SQL Database).
 
+![Seleccionar Crear SQL Database](imagenes/E1Imagen3.png)
 
-![Seleccionar Crear SQL Database](imagenes/E1Imagen2.png)
 
 
    > **Consejo:** Una base de datos SQL única es la opción más sencilla de configurar y es perfecta para aprender.
@@ -55,18 +55,14 @@ A través de la herramienta nativa **Query editor (preview)**, se realizan inter
    * **Grupo de recursos (Resource group):** Crea un nuevo grupo de recursos con el nombre de tu elección. 
    
    > *Un grupo de recursos es una carpeta que mantiene juntos los recursos relacionados; al terminar, puedes eliminarla para borrar todo con un solo clic.*
+   ![Configuración Básica de la Base de Datos](imagenes/E1Imagen4.png)
    
    * **Nombre de la base de datos (Database name):** `Dealership`.
-
-
-![Configuración Básica de la Base de Datos](imagenes/E1Imagen3.png)
-
+  ![Configuración del Servidor SQL](imagenes/E1Imagen5.png)
 
    * **Servidor (Server):** Selecciona **Crear nuevo** (Create new) y dale un nombre único en cualquier ubicación disponible. Usa la autenticación de SQL (SQL authentication), especifica tu nombre como administrador del servidor y crea una contraseña compleja. Selecciona **Aceptar** (OK).
 
-
-![Configuración del Servidor SQL](imagenes/E1Imagen4.png)
-
+![Configuración de Seguridad](imagenes/E1Imagen6.png)
 
    * **¿Desea usar el grupo elástico de SQL? (Want to use SQL elastic pool?):** No.
    * **Entorno de carga de trabajo (Workload environment):** Desarrollo (Development).
@@ -77,7 +73,7 @@ A través de la herramienta nativa **Query editor (preview)**, se realizan inter
 5. Selecciona **Siguiente: Redes >** (Next: Networking >). En conectividad de red, selecciona **Punto de conexión público** (Public endpoint). En las reglas de firewall, establece en **Sí** (Yes) tanto "Permitir que los servicios y recursos de Azure accedan a este servidor" como "Agregar dirección IP del cliente actual".
 
 
-![Configuración de Red y Firewall](imagenes/E1Imagen5.png)
+![Configuración de Red y Firewall](imagenes/E1Imagen7.png)
 
 
    > **Consejo:** Estas configuraciones abren el acceso justo para que puedas conectarte a la base de datos durante el laboratorio.
@@ -85,47 +81,40 @@ A través de la herramienta nativa **Query editor (preview)**, se realizan inter
 
 6. Selecciona **Siguiente: Seguridad >** (Next: Security >) y asegúrate de que la opción "Habilitar Microsoft Defender para SQL" esté configurada en **Ahora no** (Not now).
 
-
-![Configuración de Seguridad](imagenes/E1Imagen6.png)
+![Revisar y Crear](imagenes/E1Imagen8.png)
 
 
 7. Selecciona **Siguiente: Configuración adicional >** (Next: Additional settings >). Asegúrate de que la opción "Usar datos existentes" (Use existing data) sea **Ninguno** (None).
 
-
-![Configuración de Datos Adicionales - Ninguno](imagenes/E1Imagen7.png)
-
-
    > **Importante:** Dejar esto en "Ninguno" te da una base de datos completamente vacía.
-
+![Despliegue completado](imagenes/E1Imagen9.png)
 
 8. Selecciona **Revisar + crear** (Review + create), revisa la configuración y luego selecciona **Crear** (Create).
 
-
-![Revisar y Crear](imagenes/E1Imagen8.png)
+![Autenticación SQL en Query Editor](imagenes/E1Imagen10.png)
 
 
 9. Espera unos minutos a que se complete la implementación y selecciona **Ir al recurso** (Go to resource).
 
-
-![Despliegue completado](imagenes/E1Imagen9.png)
-
-
+![Panel de Nueva Consulta](imagenes/E1Imagen11.png)
+![Panel de Nueva Consulta](imagenes/E1Imagen12.png)
 ## Fase 2: Crear las tablas de la base de datos y añadir datos de muestra
 
 
 1. En el menú izquierdo de la base de datos, selecciona **Editor de consultas (versión preliminar)** (Query editor). En la pestaña de **Autenticación de SQL**, introduce el usuario y contraseña del administrador que creaste, y selecciona **Conectar**.
 
 
-![Autenticación SQL en Query Editor](imagenes/E1Imagen10.png)
+![Panel de Nueva Consulta](imagenes/E1Imagen13.png)
 
 
    *(Nota: Si ves un error sobre tu IP, selecciona el enlace en el mensaje para permitir el acceso a tu IP y vuelve a conectarte).*
 
+![Panel de Nueva Consulta](imagenes/E1Imagen14.png)
 
 2. Selecciona **+ Nueva consulta** (+ New query). Pega el siguiente código SQL para crear la tabla de Fabricantes (Manufacturer) y Vehículos (Vehicle).
 
 
-![Panel de Nueva Consulta](imagenes/E1Imagen11.png)
+
 
 
 ```sql
@@ -147,9 +136,14 @@ CREATE TABLE Vehicle
     ListPrice      DECIMAL(10, 2),
     FOREIGN KEY (ManufacturerID) REFERENCES Manufacturer(ManufacturerID)
 );
-Selecciona ▷ Ejecutar (Run) en la parte superior. Deberías ver un mensaje confirmando que la consulta fue exitosa.
+```
+
+3. Selecciona ▷ Ejecutar (Run) en la parte superior. Deberías ver un mensaje confirmando que la consulta fue exitosa.
 Ejecución de CREATE TABLE completada
+![Panel de Nueva Consulta](imagenes/E1Imagen15.png)
+
 Borra el código anterior, pega el siguiente bloque para insertar datos en las tablas, y selecciona ▷ Ejecutar (Run):
+```
 INSERT INTO Manufacturer (ManufacturerID, ManufacturerName, Country) VALUES
 (1, 'Toyota',        'Japan'),
 (2, 'Ford',          'United States'),
@@ -166,8 +160,11 @@ INSERT INTO Vehicle (VehicleID, ModelName, ManufacturerID, ModelYear, BodyType, 
 (106, 'Tiguan',      3, 2024, 'SUV',        33400.00),
 (107, 'Elantra',     4, 2024, 'Sedan',      22300.00),
 (108, 'Tucson',      4, 2023, 'SUV',        29600.00);
-Ejecución de INSERT INTO completada
 ```
+Ejecución de INSERT INTO completada
+
+![Panel de Nueva Consulta](imagenes/E1Imagen16.png)
+
 # ## Fase 3: Consultar los datos
 Ahora puedes usar comandos SQL SELECT para recuperar y explorar los datos. Prueba ejecutando cada uno de estos bloques:
 1. Ver todos los datos de los vehículos:
@@ -195,7 +192,8 @@ INNER JOIN Manufacturer AS m
 ORDER BY m.ManufacturerName;
 Resultado de consulta con INNER JOIN
 Cuando termines, cierra el panel del editor de consultas y descarta los cambios si se te solicita.
-Fase 4: Limpieza de recursos
+![Panel de Nueva Consulta](imagenes/E1Imagen17.png)
+# ## Fase 4: Limpieza de recursos
 Para no incurrir en costes adicionales, asegúrate de eliminar los recursos que creaste.
 En el portal de Azure, navega hasta el grupo de recursos que creaste al inicio del laboratorio.
 Selecciona Eliminar grupo de recursos (Delete resource group).
