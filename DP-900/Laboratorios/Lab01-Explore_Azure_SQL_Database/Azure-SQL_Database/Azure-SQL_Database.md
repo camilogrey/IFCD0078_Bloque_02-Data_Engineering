@@ -32,7 +32,7 @@ A través de la herramienta nativa **Query editor (preview)**, se realizan inter
 * **Prevención de Costes:** Esta acción elimina de forma simultánea e irreversible la base de datos, el servidor lógico y las configuraciones de red asociadas, garantizando que **no queden recursos residuales activos** generando cargos en la suscripción.
 
 # EJECUCIÓN LABORATORIO
-# Fase 1: Aprovisionar un recurso de Azure SQL Database
+# # Fase 1: Aprovisionar un recurso de Azure SQL Database
 "Aprovisionar" simplemente significa crear y configurar un nuevo recurso. En esta sección, crearás tu servidor de base de datos y una base de datos vacía para alojar tus datos.
 
 
