@@ -171,6 +171,7 @@ Ahora puedes usar comandos SQL SELECT para recuperar y explorar los datos. Prueb
 ```sql
 SELECT * FROM Vehicle;
 ```
+
 Resultado de SELECT * FROM Vehicle
 ![Panel de Nueva Consulta](imagenes/E1Imagen17.png)
 2. Ver solo columnas específicas:
