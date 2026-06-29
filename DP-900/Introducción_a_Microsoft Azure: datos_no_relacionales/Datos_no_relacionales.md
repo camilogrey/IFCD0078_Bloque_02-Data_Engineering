@@ -276,7 +276,7 @@ Aquí tienes el módulo completo con las preguntas y todas sus opciones traducid
 
 * **Explicación:** El nivel *Archive* ofrece los costes de almacenamiento por gigabyte más bajos de toda la nube de Azure, lo que lo hace ideal para almacenar volúmenes masivos de imágenes de respaldo o datos históricos que se consultan de manera muy excepcional y que toleran tiempos de recuperación de varias horas.
 
-## Resumen {#resumen}
+## Resumen 
 
 Azure Storage es un servicio clave en Microsoft Azure y permite una amplia gama de escenarios y soluciones de almacenamiento de datos.
 
