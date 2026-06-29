@@ -66,9 +66,9 @@ Cosmos DB utiliza una jerarquía de recursos de cuatro niveles para organizar su
 
 La **clave de partición** es una propiedad que se elige para distribuir los datos entre las particiones lógicas. Cada partición lógica puede almacenar hasta 20 GB de datos. Una clave de partición bien elegida —con muchos valores distintos y una distribución uniforme de los datos entre ellos— es importante para mantener un rendimiento equilibrado a medida que crece la base de datos.
 
-![Diagrama que explica cómo Azure Cosmos DB organiza los datos.][image1]
+![Diagrama que explica cómo Azure Cosmos DB organiza los datos.](imagenes3_2/1cosmos-db-hierarchy.png)
 
-1cosmos-db-hierarchy.png
+
 
 Cosmos DB crea y mantiene automáticamente índices en todas las propiedades de los elementos por defecto. No es necesario definir un esquema de antemano ni gestionar los índices manualmente; el servicio se encarga de todo.
 
@@ -90,9 +90,7 @@ Dado que las réplicas existen en varias regiones, es necesario decidir el grado
 
 Para la mayoría de las aplicaciones transaccionales, la consistencia de sesión es el punto de partida recomendado.
 
-![Diagrama que explica la distribución y el rendimiento a nivel mundial.][image2]
-
-2cosmos-db-global-consistency.png
+![Diagrama que explica la distribución y el rendimiento a nivel mundial.](imagenes3_2/2cosmos-db-global-consistency.png)
 
 ### Modos de procesamiento y precios
 
@@ -112,9 +110,8 @@ Las cuentas sin servidor están limitadas a una sola región de Azure. Si su apl
 
 La opción **de escalado automático** le permite establecer un máximo de RU/s, y Cosmos DB ajusta la capacidad automáticamente dentro de ese rango en función de la demanda real.
 
-![][image3]
+![image3](imagenes3_2/3cosmos-db-throughput-modes.png)
 
-3cosmos-db-throughput-modes.png
 
 ### Cuándo usar Cosmos DB
 
@@ -144,9 +141,8 @@ La principal ventaja es la portabilidad. Si tu equipo ya tiene una aplicación b
 
 Las cinco API compatibles son: **NoSQL** , **MongoDB** , **Table** , **Apache Cassandra** y **Apache Gremlin** . Cada una está diseñada para un tipo de datos o caso de uso diferente.
 
-![Diagrama que muestra Azure Cosmos DB en el centro, con cinco API que se ramifican hacia afuera: NoSQL, MongoDB, Table, Apache Cassandra y Apache Gremlin.][image4]
+![Diagrama que muestra Azure Cosmos DB en el centro, con cinco API que se ramifican hacia afuera: NoSQL, MongoDB, Table, Apache Cassandra y Apache Gremlin.](imagenes3_2/4cosmos-db-apis.png)
 
-4cosmos-db-apis.png
 
 ### Cosmos DB para NoSQL
 
@@ -160,13 +156,14 @@ Se recomienda utilizar la API NoSQL para nuevas aplicaciones.
 
 Una consulta tiene este aspecto:
 
-**SQL**
+'''SQL
 
 SELECT \*
 
 FROM customers c
 
 WHERE c.id \= "joe@litware.com"
+'''
 
 El resultado es un documento JSON:
 
@@ -252,9 +249,10 @@ Por ejemplo, una tabla **de empleados** podría tener este aspecto:
 
 Cassandra utiliza CQL (Cassandra Query Language), cuya sintaxis es similar a la de SQL. Para recuperar un registro específico:
 
-**SQL**
+sql'''
 
 SELECT \* FROM Employees WHERE ID \= 2
+'''
 
 Esta API es ideal para equipos que migran una carga de trabajo de Apache Cassandra a una base de datos en la nube totalmente administrada.
 
