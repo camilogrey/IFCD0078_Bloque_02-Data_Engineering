@@ -51,7 +51,7 @@ La mayoría de las aplicaciones de software necesitan almacenar datos. A menudo,
 
 Azure Storage y Microsoft OneLake ofrecen diversas opciones para almacenar datos en la nube. En este módulo, explorará las capacidades fundamentales de Azure Storage y Microsoft OneLake, y aprenderá cómo se utilizan para dar soporte a aplicaciones que requieren almacenes de datos no relacionales.
 
-** Nota**
+[!NOTE]** Nota**
 
 Reconocemos que cada persona aprende de manera diferente. Puedes completar este módulo en formato de video o leer el contenido en formato de texto e imágenes. El texto contiene más detalles que los videos, por lo que en algunos casos te resultará útil como material complementario a la presentación en video.
 
@@ -59,9 +59,8 @@ Reconocemos que cada persona aprende de manera diferente. Puedes completar este 
 
 Azure Blob Storage es un servicio que permite almacenar grandes cantidades de datos no estructurados como objetos binarios de gran tamaño, o *blobs* , en la nube. Los blobs son una forma eficiente de almacenar archivos de datos en un formato optimizado para el almacenamiento en la nube, y las aplicaciones pueden leerlos y escribirlos mediante la API de Azure Blob Storage.
 
-![Captura de pantalla de un contenedor de almacenamiento de blobs de Azure con dos blobs.][image1]
+![Captura de pantalla de un contenedor de almacenamiento de blobs de Azure con dos blobs.][/imagenes3_1/imagen1.png]
 
-Imagen1
 
 En una cuenta de almacenamiento de Azure, los blobs se almacenan en *contenedores* . Un contenedor permite agrupar blobs relacionados de forma práctica. El acceso para leer y escribir blobs dentro de un contenedor se controla directamente en el contenedor. La autenticación con Microsoft Entra ID (el servicio de administración de identidades y accesos de Azure) es el método de inicio de sesión recomendado para Azure Blob Storage, ya que permite asignar permisos precisos mediante el control de acceso basado en roles (RBAC) de Azure, un sistema que controla quién puede realizar acciones específicas en los recursos de Azure.
 
