@@ -31,17 +31,17 @@ En este módulo aprenderás a:
 
 * [Introducción](#introducción-introducción)
 
-* [Explora el almacenamiento de blobs de Azure](#explora-el-almacenamiento-de-blobs-de-azure)
+* [Explora el almacenamiento de blobs de Azure](#explora-el-almacenamiento-de-blobs-de-azure-explora-el-almacenamiento-de-blobs-de-azure)
 
-* [Explora Azure Data Lake Storage Gen2](#explora-azure-data-lake-storage-gen2)
+* [Explora Azure Data Lake Storage Gen2](#explora-azure-data-lake-storage-gen2-explora-azure-data-lake-storage-gen2)
 
-* [Explora Microsoft OneLake en Fabric](#explora-microsoft-onelake-en-fabric)
+* [Explora Microsoft OneLake en Fabric](#explora-microsoft-onelake-en-fabric-explora-microsoft-onelake-en-fabric)
 
-* [Explorar Azure Files](#explorar-azure-files)
+* [Explorar Azure Files](#explorar-azure-files-explorar-azure-files)
 
-* [Explorar Azure Tables](#explorar-azure-tables)
+* [Explorar Azure Tables](#explorar-azure-tables-explorar-azure-tables)
 
-* [Evaluación del módulo](#evaluación-del-módulo)
+* [Evaluación del módulo](#evaluación-del-módulo-evaluación-del-módulo)
 
 * [Resumen](#resumen)
 
