@@ -1,0 +1,2 @@
+# Introducción a Microsoft Azure: datos no relacionales en Azure
+Los datos no relacionales son una forma común en que las aplicaciones almacenan y consultan datos sin la complejidad de un esquema relacional. En Microsoft Azure, puede usar Azure Storage y Azure Cosmos DB para crear almacenes de datos seguros y altamente escalables para datos no relacionales. Esta ruta de aprendizaje le ayudará a prepararse para la certificación [Azure Data Fundamentals](https://learn.microsoft.com/en-us/certifications/azure-data-fundamentals?azure-portal=true).
