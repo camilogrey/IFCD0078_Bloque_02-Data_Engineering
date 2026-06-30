@@ -70,7 +70,7 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 4. Cuando la configuración haya sido validada, seleccione **Crear**.
 
-![image4](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmos20DB/imagenes/4CreateCosmosDBNoSQL1.png)
+![image4](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/imagenes/4CreateCosmosDBNoSQL1.png)
 
 
 ***Consejo**: Azure Portal estimará cuánto tiempo tardará en provisionar esta instancia de Azure Cosmos DB. El tiempo estimado de creación se calcula en función de la ubicación que hayas seleccionado.*
@@ -78,7 +78,7 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 5. Espera a que termine el despliegue. Luego ve al recurso desplegado.
 
-![image5](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmos20DB/imagenes/4CreateCosmosDBNoSQL2.png)
+![image5](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/imagenes/4CreateCosmosDBNoSQL2.png)
 
 ### **4.3.**                         **Crea una base de datos de ejemplo**
 
@@ -86,21 +86,21 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 1. En la página de tu nueva cuenta de Cosmos DB, en el panel de la izquierda, selecciona **Explorador de datos**.
 
-![image6](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmos20DB/imagenes/5CosmosDBNoOverView1.png)
+![image6](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/imagenes/5CosmosDBNoOverView1.png)
 
 
  
 
 2. En la página **del Explorador de Datos**, **selecciona Iniciar inicio rápido**.
 
-![image7](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmos20DB/imagenes/5CosmosDBNoOverView2.png)
+![image7](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/imagenes/5CosmosDBNoOverView2.png)
  
 
 ***Consejo**: Quick Start crea una base de datos funcional, contenedor y datos de muestra para que puedas practicar añadir y consultar elementos sin diseñar un esquema primero.*
 
 3. En el **panel de Nuevo Contenedor**, revisa la configuración pre-rellenada de la base de datos de ejemplo (una base de datos llamada **SampleDB,** un contenedor llamado **SampleContainer** y una clave de partición **de /categoryId**) y luego **selecciona OK.** Un breve tutorial guiado puede aparecer junto al panel; puedes seguirlo paso a paso con **Siguiente** o simplemente seleccionar **OK** para continuar.
 
-![image8](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmos20DB/imagenes/5CosmosDBNoOverView3.png)
+![image8](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/imagenes/5CosmosDBNoOverView3.png)
 
  
 
@@ -108,7 +108,7 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 4. Observa el estado en el panel inferior de la pantalla hasta que se haya creado la base de datos **SampleDB** y su contenedor **SampleContainer** (lo que puede tardar un minuto aproximadamente).
 
-![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmos20DB/imagenes/6SampleDB.png)
+![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/imagenes/6SampleDB.png)
 
  
 
@@ -116,7 +116,7 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 1. En la página del Explorador de Datos, amplía la base de datos **de SampleDB** y el contenedor **SampleContainer**, y selecciona **Elementos** para ver una lista de elementos en el contenedor. Los elementos representan datos de productos, cada uno con un id único y otras propiedades. Selecciona cualquier elemento para ver una representación JSON de sus datos en el panel de la derecha.
 
-![image10](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmos20DB/imagenes/6SampleDB1.png)
+![image10](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/imagenes/6SampleDB1.png)
 
  
 
@@ -141,7 +141,7 @@ Necesitarás una [suscripción a Azure](https://azure.microsoft.com/free) en la 
 
 }
 ```
-![imagen11](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmos20DB/imagenes/7CrearItem.png)
+![imagen11](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/imagenes/7CrearItem.png)
 
  
 
@@ -167,7 +167,7 @@ SELECT * FROM c
 ```
 3. Review the results, which includes the full JSON representation of all items.  
 
-![imagen12](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmos20DB/imagenes/8Select.png)
+![imagen12](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/imagenes/8Select.png)
 
 4. Modify the query as follows:
 ```sql
@@ -177,7 +177,7 @@ SELECT * FROM c WHERE CONTAINS(c.name,"Helmet")
 
 5. Use the **Execute Query** button to run the revised query and review the results, which includes JSON entities for any items with a **name** field containing the text “Helmet”.
 
-![imagen13](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmos20DB/imagenes/9Select.png)
+![imagen13](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/imagenes/9Select.png)
 
  
 
