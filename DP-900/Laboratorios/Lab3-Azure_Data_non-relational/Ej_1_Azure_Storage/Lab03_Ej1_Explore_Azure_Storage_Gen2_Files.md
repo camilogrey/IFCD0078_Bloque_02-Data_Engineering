@@ -118,22 +118,24 @@ Ahora que tiene una **Azure Storage account**, puede crear un contenedor para lo
 
 1. Descargue el archivo JSON product1.json desde https://aka.ms/product1.json y guárdelo en su ordenador (puede guardarlo en cualquier carpeta; lo subirá al **blob storage** más tarde). Si el archivo JSON se muestra en su navegador, haga clic derecho en la página y seleccione **Guardar como**. Asigne al archivo el nombre product1.json y almacénelo en su carpeta de descargas.  
 2. En la página del **Azure portal** de su contenedor de almacenamiento, en el lado izquierdo, en la sección **Data storage**, seleccione **Containers**.  
-3. En la página de **Containers**, seleccione **＋ Add container**. En el panel de **New container**, introduzca el nombre data. Tenga en cuenta que el **Anonymous access level** se configura automáticamente en **Private (no anonymous access)** y no se puede cambiar, porque el acceso anónimo está deshabilitado por defecto en la cuenta de almacenamiento. Seleccione **Create**.
+3. En la página de **Containers**, seleccione **＋ Add container**. En el panel de **New container**, introduzca el nombre **data**. Tenga en cuenta que el **Anonymous access level** se configura automáticamente en **Private (no anonymous access)** y no se puede cambiar, porque el acceso anónimo está deshabilitado por defecto en la cuenta de almacenamiento. Seleccione **Create**.
 
 ![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/10Containers.png)  
 💡 **Consejo:** El acceso **Private** mantiene seguros sus datos de muestra. El acceso público rara vez se necesita, excepto para sitios web estáticos o escenarios de datos abiertos. Nombrarlo data mantiene este ejemplo simple y legible.
 
-4. Cuando se haya creado el contenedor data, verifique que aparece en la lista de la página **Containers**.  
+4. Cuando se haya creado el contenedor **data**, verifique que aparece en la lista de la página **Containers**.  
     ![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/11Containers.png)  
 5. En el panel del lado izquierdo, en la sección superior, seleccione **Storage browser**. Esta página proporciona una interfaz basada en el navegador que puede utilizar para trabajar con los datos de su cuenta de almacenamiento.  
 6. En la página del **storage browser**, seleccione **Blob containers** y verifique que su contenedor data aparece en la lista.  
-7. Seleccione el contenedor data y observe que está vacío.  
-    ![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/12StorageBrowser.png) 
+7. Seleccione el contenedor **data** y observe que está vacío.  
+    ![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/12StorageBrowser.png)
+
 8. Seleccione **＋ Add Directory** y lea la información sobre las carpetas antes de crear un nuevo directorio llamado products.  
 9. En el **storage browser**, verifique que la vista actual muestra el contenido de la carpeta products que acaba de crear; observe que las "rutas de navegación" (*breadcrumbs*) en la parte superior de la página reflejan la ruta Blob containers \> data \> products.  
     ![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/13products.png)  
-10. En las rutas de navegación, seleccione data para cambiar al contenedor data, y note que no contiene una carpeta llamada products. Las carpetas en el **blob storage** son virtuales y solo existen como parte de la ruta de un **blob**. ¡Dado que la carpeta products no contenía **blobs**, en realidad no está ahí\!
+10. En las rutas de navegación, seleccione data para cambiar al contenedor data, y note que **no contiene una carpeta llamada products.** Las carpetas en el **blob storage** son virtuales y solo existen como parte de la ruta de un **blob**. ¡Dado que la carpeta products no contenía **blobs**, en realidad no está ahí\!
 
+![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/14NOproducts.png)
 💡 **Consejo:** Un espacio de nombres plano (*flat namespace*) significa que los directorios son solo prefijos de nombre (products/file.json). Este diseño permite una escala masiva porque el servicio indexa los nombres de los **blobs** en lugar de mantener una estructura de árbol real.
 
 11. Utilice el botón **⤒ Upload** para abrir el panel **Upload blob**. En el panel **Upload blob**, seleccione el archivo product1.json que guardó previamente en su ordenador local. Luego, en la sección **Advanced**, en el cuadro **Upload to folder**, introduzca product\_data y seleccione el botón **Upload**.
