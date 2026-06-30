@@ -180,7 +180,7 @@ El soporte de **Data Lake Store Gen2** le permite utilizar carpetas jerárquicas
 9. En el lado izquierdo, en la sección **Data storage**, seleccione **Containers**.  
 10. Abra el contenedor data y verifique que la carpeta product\_data que creó aparece en la lista.  
 11. Seleccione el icono de los tres puntos (**‧‧‧**) en el extremo derecho de la carpeta y note que, con el espacio de nombres jerárquico habilitado, puede realizar tareas de configuración a nivel de carpeta, incluyendo cambiar el nombre de las carpetas y establecer permisos (**Manage ACL**).  
-     ![image18](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/18UpgradeGen2-1.png)
+     ![image18](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/22UploadFich2.png)
 
 💡 **Consejo:** Las carpetas reales le permiten aplicar seguridad de mínimo privilegio con granularidad de carpeta, renombrar de forma segura y acelerar los listados recursivos en comparación con el escaneo de miles de nombres de **blobs** con prefijo.
 
