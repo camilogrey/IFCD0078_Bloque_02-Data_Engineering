@@ -58,7 +58,7 @@ Necesitará una suscripción de [Azure subscription](https://azure.microsoft.com
 
 1. Si aún no lo ha hecho, inicie sesión en el **Azure portal**.  
 2. En la página de inicio del **Azure portal**, seleccione **＋ Create a resource** en la esquina superior izquierda y busque **Storage account**. Luego, en la página resultante de **Storage account**, seleccione **Create**.  
-![imagen1](DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/00CreateAccount.png)
+![imagen1](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/00CreateAccount.png)
 
 ![imagen2](DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/01CreateAccount.png)
 
