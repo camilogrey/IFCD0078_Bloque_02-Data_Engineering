@@ -58,8 +58,10 @@ Necesitará una suscripción de [Azure subscription](https://azure.microsoft.com
 
 1. Si aún no lo ha hecho, inicie sesión en el **Azure portal**.  
 2. En la página de inicio del **Azure portal**, seleccione **＋ Create a resource** en la esquina superior izquierda y busque **Storage account**. Luego, en la página resultante de **Storage account**, seleccione **Create**.  
-![imagen1](DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/00 CreateAccount.png)  
-![imagen13](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/imagenes/9Select.png)
+![imagen1](DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/00CreateAccount.png) 
+
+![imagen2](DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/01CreateAccount.png) 
+
 3. Introduzca los siguientes valores en la pestaña **Basics** de la página **Create a storage account**:
 
    ○      **Subscription:** Seleccione su suscripción de Azure.
@@ -78,7 +80,7 @@ Necesitará una suscripción de [Azure subscription](https://azure.microsoft.com
 
 *Nota:* Dependiendo de la región que elija, es posible que también vea una opción de **Preferred storage type** configurada en *Azure Blob Storage o Azure Data Lake Storage Gen 2*. Puede dejarla en el valor por defecto.
 
-![Screenshot of the Basics tab of the Create a storage account page showing the subscription, new resource group, storage account name, region, Standard performance, and Locally-redundant storage redundancy.][image2]
+![imagen3](DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/02CreateAccount.png)
 
 💡 **Consejo:** Un nuevo grupo de recursos facilita la limpieza. **Standard \+ LRS** es la base de menor coste, ideal para el aprendizaje. **LRS** mantiene tres copias síncronas en una región, lo cual es adecuado para datos de demostración no críticos sin pagar por la georréplica.
 
