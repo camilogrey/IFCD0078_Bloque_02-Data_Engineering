@@ -22,6 +22,10 @@ El documento guía al usuario a través de un escenario dividido en 4 fases prin
 
 **Borrado Final:** Al terminar, borrar el grupo de recursos dp900-lab-rg eliminará absolutamente todo lo que creaste de un solo golpe, asegurándote de que no se consuma el crédito de tu suscripción. 
 
+** 🧠 Conclusiones Técnicas del Ejercicio **
+* **Blob Storage** es óptimo y masivamente escalable para almacenar objetos binarios sueltos e independientes (imágenes, logs, vídeos) gracias a su indexación de nombres planos.
+* **Data Lake Storage Gen2** es indispensable para entornos de analítica y Big Data (como clusters de Spark, Databricks o Synapse), ya que el espacio de nombres jerárquico permite realizar búsquedas y operaciones de renombrado masivo en milisegundos sin necesidad de reescribir los metadatos de miles de archivos individuales.
+
 ## 🛠️ **Realización Laboratorio**
 
 En este laboratorio, creará una cuenta de **Azure Storage account**, que es un lugar seguro en la nube para guardar diferentes tipos de datos. Luego explorará sus cuatro servicios principales y verá para qué sirve cada uno:
