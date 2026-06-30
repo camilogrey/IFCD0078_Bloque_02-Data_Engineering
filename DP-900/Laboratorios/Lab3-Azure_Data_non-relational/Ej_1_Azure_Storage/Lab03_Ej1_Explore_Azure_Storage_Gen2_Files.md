@@ -126,7 +126,7 @@ Ahora que tiene una **Azure Storage account**, puede crear un contenedor para lo
 4. Cuando se haya creado el contenedor **data**, verifique que aparece en la lista de la página **Containers**.  
     ![image11](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/11Containers.png)  
 5. En el panel del lado izquierdo, en la sección superior, seleccione **Storage browser**. Esta página proporciona una interfaz basada en el navegador que puede utilizar para trabajar con los datos de su cuenta de almacenamiento.  
-6. En la página del **storage browser**, seleccione **Blob containers** y verifique que su contenedor data aparece en la lista.  
+6. En la página del **storage browser**, seleccione **Blob containers** y verifique que su contenedor **data** aparece en la lista.  
 7. Seleccione el contenedor **data** y observe que está vacío.  
     ![image12](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/12StorageBrowser.png)
 
@@ -143,10 +143,10 @@ Ahora que tiene una **Azure Storage account**, puede crear un contenedor para lo
 ![image15](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/15Upload.png)  
 12\. 💡 **Consejo:** Proporcionar un nombre de carpeta durante la carga crea automáticamente la ruta virtual, lo que ilustra que la presencia de un **blob** hace que aparezca la "carpeta".
 
-13. Cierre el panel **Upload blob** si aún está abierto, y verifique que se ha creado una carpeta virtual product\_data en el contenedor data.
-14. Seleccione la carpeta product\_data y verifique que contiene el **blob** product1.json que subió.  
+13. Cierre el panel **Upload blob** si aún está abierto, y verifique que se ha creado una carpeta virtual **product\_data** en el contenedor data.
+14. Seleccione la carpeta **product\_data** y verifique que contiene el **blob** **product1.json** que subió.  
 15. En el lado izquierdo, en la sección **Data storage**, seleccione **Containers**.  
-16. Abra el contenedor data y verifique que la carpeta product\_data que creó aparece en la lista.
+16. Abra el contenedor data y verifique que la carpeta **product\_data** que creó aparece en la lista.
 ![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/16RevFichero.png)  
 
 17. Seleccione el icono de los tres puntos (**‧‧‧**) en el extremo derecho de la carpeta y note que el menú no muestra ninguna opción. Las carpetas en un contenedor de **blob** con espacio de nombres plano son virtuales y no se pueden gestionar.
@@ -196,16 +196,16 @@ El soporte de **Data Lake Store Gen2** le permite utilizar carpetas jerárquicas
 
 1. En la página del **Azure portal** de su cuenta de almacenamiento, en el lado izquierdo, inicie sesión en la sección **Data storage**, seleccione **Classic file shares**.  
 2. En la página de **Classic file shares**, seleccione **＋ Classic file share**. En la pestaña **Basics**, introduzca el nombre files y deje el **Access tier** configurado en **Transaction optimized**.  
-  ![image18](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/19UpgradeGen2-1-1.png) 
+  ![image18](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/23NewFiles.png) 
 3. Seleccione **Next: Backup \>** y desmarque la casilla de verificación **Enable backup** para deshabilitar la copia de seguridad. Luego seleccione **Review \+ create**, y en la pestaña **Review \+ create**, seleccione **Create**.  
-    ![image18](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/19UpgradeGen2-2-1.png)
+    ![image18](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/24Backup.png)
 
 💡 **Consejo:** Deshabilitar la copia de seguridad mantiene bajos los costes para un entorno de laboratorio de corta duración; la habilitaría para la resiliencia en producción.
 
 4. Cuando se haya creado el recurso compartido files, vuelva a la página de **Classic file shares** y abra su nuevo recurso compartido files.  
 5. En la parte superior de la página, seleccione **Connect**. Luego, en el panel **Connect**, note que hay pestañas para los sistemas operativos comunes (Windows, Linux y macOS) que contienen scripts que puede ejecutar para conectarse a la carpeta compartida desde un ordenador cliente.
 
-![image18](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/19UpgradeGen2-2-1.png)  
+![image18](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/25Connect.png)  
 💡 **Consejo:** Los scripts generados muestran exactamente cómo montar el recurso compartido utilizando comandos nativos de la plataforma, ilustrando patrones de acceso híbridos desde máquinas virtuales, contenedores o servidores locales (*on-prem*).
 
 6. Cierre el panel **Connect** y luego cierre la página de files para volver a la página de **Classic file shares** de su cuenta de almacenamiento de Azure.
@@ -216,7 +216,7 @@ Cuando haya terminado de explorar **Azure Storage**, debe eliminar los recursos 
 
 1. En el **Azure portal**, navegue al grupo de recursos que creó al inicio del laboratorio (por ejemplo, dp900-lab-rg).  
 2. Seleccione **Delete resource group**, confirme la eliminación introduciendo el nombre del grupo de recursos y seleccione **Delete**.
-![][image19]
+![image18](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/26CleanUp.png)
 
 💡 **Consejo:** Eliminar el grupo de recursos quita la cuenta de almacenamiento y todo lo que hay dentro en un solo paso. Esta es la forma más rápida de asegurarse de que no quede nada en ejecución y costando dinero.
 
