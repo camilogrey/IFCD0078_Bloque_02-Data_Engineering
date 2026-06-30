@@ -58,9 +58,9 @@ Necesitará una suscripción de [Azure subscription](https://azure.microsoft.com
 
 1. Si aún no lo ha hecho, inicie sesión en el **Azure portal**.  
 2. En la página de inicio del **Azure portal**, seleccione **＋ Create a resource** en la esquina superior izquierda y busque **Storage account**. Luego, en la página resultante de **Storage account**, seleccione **Create**.  
-![imagen1](DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/00CreateAccount.png) 
+![imagen1](DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/00CreateAccount.png)
 
-![imagen2](DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/01CreateAccount.png) 
+![imagen2](DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/01CreateAccount.png)
 
 3. Introduzca los siguientes valores en la pestaña **Basics** de la página **Create a storage account**:
 
@@ -86,13 +86,13 @@ Necesitará una suscripción de [Azure subscription](https://azure.microsoft.com
 
 4. Seleccione **Next: Advanced \>** y visualice las opciones de configuración avanzada. En particular, observe que aquí es donde puede habilitar el espacio de nombres jerárquico (**hierarchical namespace**) para admitir **Data Lake Storage Gen2**.Deje la opción **Enable hierarchical namespace** desmarcada (la habilitará más tarde), y luego seleccione **Next: Networking \>** para ver las opciones de red de su cuenta de almacenamiento.
 
-![Screenshot of the Advanced tab with the Enable hierarchical namespace checkbox cleared.][image3]
+![image4](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/03CreateAccount.png)
 
 4. Seleccione **Next: Data protection \>** y luego, en la sección **Recovery**, desactive todas las opciones de **Enable soft delete…**.
 
 Estas opciones retienen los archivos eliminados para su posterior recuperación, pero pueden causar problemas más adelante cuando habilite el espacio de nombres jerárquico.
 
-![Screenshot of the Data protection tab with all three Enable soft delete options cleared.][image4]
+![image5](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/04CreateAccount.png)
 
  
 
