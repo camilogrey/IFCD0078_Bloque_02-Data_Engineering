@@ -1,6 +1,6 @@
 # **Explore Azure Cosmos DB**
 
-## **1\.**     ** 📌Objetivo del Laboratorio**
+## **1\.**     **📌Objetivo del Laboratorio**
 
 El objetivo principal de este ejercicio es aprender a aprovisionar, configurar y explorar los diferentes servicios de almacenamiento no relacional dentro de una cuenta de Azure Storage. El laboratorio busca que experimentes de forma directa cómo cambia el comportamiento de la gestión de archivos al pasar de un almacenamiento plano (Flat Namespace) a uno jerárquico (Hierarchical Namespace / Data Lake Gen2) , además de comprender el uso de recursos compartidos de archivos.
 
