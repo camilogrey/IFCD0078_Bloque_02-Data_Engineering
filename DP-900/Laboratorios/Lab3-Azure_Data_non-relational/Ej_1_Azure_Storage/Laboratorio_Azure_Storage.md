@@ -1,3 +1,5 @@
+# Azure-Storage y Data Lake Gen2
+# DP-900 - Lab 03 Ejercicio 1
 # Laboratorio Práctico: Exploración de Azure Storage y Data Lake Gen2
 
 Este repositorio contiene la documentación paso a paso y la evidencia visual del laboratorio práctico sobre arquitecturas de almacenamiento no relacional en Microsoft Azure.

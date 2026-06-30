@@ -1,3 +1,5 @@
+# Azure Cosmos DB (NoSQL)
+# DP-900 - Lab 03 Ejercicio 2
 # Laboratorio Práctico: Despliegue y Consulta en Azure Cosmos DB (NoSQL)
 
 Este repositorio documenta el aprovisionamiento, inserción de documentos y consultas estructuradas utilizando la base de datos NoSQL global de Microsoft Azure.
