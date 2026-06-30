@@ -220,4 +220,4 @@ Cuando haya terminado de explorar **Azure Storage**, debe eliminar los recursos 
 
 💡 **Consejo:** Eliminar el grupo de recursos quita la cuenta de almacenamiento y todo lo que hay dentro en un solo paso. Esta es la forma más rápida de asegurarse de que no quede nada en ejecución y costando dinero.
 
-3\.     En este laboratorio, creó una **Azure Storage account** y exploró **blob storage**, **Data Lake Storage Gen2** y **Azure Files**. ¡Ahora ha visto las principales formas en que Azure almacena datos no relacionales\!
+En este laboratorio, creó una **Azure Storage account** y exploró **blob storage**, **Data Lake Storage Gen2** y **Azure Files**. ¡Ahora ha visto las principales formas en que Azure almacena datos no relacionales\!
