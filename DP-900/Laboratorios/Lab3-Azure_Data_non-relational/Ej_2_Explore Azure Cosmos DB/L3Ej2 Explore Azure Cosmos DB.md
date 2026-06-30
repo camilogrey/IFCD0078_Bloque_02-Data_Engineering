@@ -159,7 +159,7 @@ Query the database
 3. Review the results, which includes the full JSON representation of all items.  
 4. Modify the query as follows:
 ```sql
-Sql SELECT \* FROM c WHERE CONTAINS(c.name,"Helmet")
+Sql SELECT * FROM c WHERE CONTAINS(c.name,"Helmet")
 ```
 ***Tip**: The NoSQL API uses familiar, SQL-like queries to search JSON documents. lists all items, and filters by text inside a property—useful for quick searches without extra setup.SELECT \* FROM cCONTAINS*
 

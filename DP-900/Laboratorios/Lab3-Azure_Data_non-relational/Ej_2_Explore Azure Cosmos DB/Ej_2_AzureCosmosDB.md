@@ -124,12 +124,12 @@ You’ll need an [Azure subscription](https://azure.microsoft.com/free) in which
 2. In the SQL Query editor, review the default query (SELECT \* FROM c) and use the **Execute Query** button to run it.  
 3. Review the results, which includes the full JSON representation of all items.  
 4. Modify the query as follows:  
-   sql
+ ``` sql
 
-SELECT \*  
+SELECT *  
 FROM c  
 WHERE CONTAINS(c.name,"Helmet")
-
+```
 ***Tip**: The NoSQL API uses familiar, SQL-like queries to search JSON documents. SELECT \* FROM c lists all items, and CONTAINS filters by text inside a property—useful for quick searches without extra setup.*
 
 5. Use the **Execute Query** button to run the revised query and review the results, which includes JSON entities for any items with a **name** field containing the text “Helmet”.  
@@ -149,5 +149,3 @@ When you’ve finished exploring Azure Cosmos DB, you should delete the resource
 In this lab, you created an Azure Cosmos DB account, added JSON items, and queried them using a SQL-like language. You’ve taken your first steps with NoSQL data in the cloud\!
 
 ![Diapositiva 13](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/10Limpieza.png)
-
-
