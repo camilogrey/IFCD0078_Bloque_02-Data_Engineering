@@ -88,11 +88,16 @@ Necesitará una suscripción de [Azure subscription](https://azure.microsoft.com
 
 ![image4](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/03CreateAccount.png)
 
+
+![image4](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/03CreateAccount.png)
+
+
+
 4. Seleccione **Next: Data protection \>** y luego, en la sección **Recovery**, desactive todas las opciones de **Enable soft delete…**.
 
 Estas opciones retienen los archivos eliminados para su posterior recuperación, pero pueden causar problemas más adelante cuando habilite el espacio de nombres jerárquico.
 
-![image5](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/04CreateAccount.png)
+![image5](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/05CreateAccount.png)
 
  
 
