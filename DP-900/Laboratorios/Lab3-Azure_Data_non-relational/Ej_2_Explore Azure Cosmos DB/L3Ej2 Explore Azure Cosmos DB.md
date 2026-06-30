@@ -157,15 +157,21 @@ Query the database
 
 1. In the **Data Explorer** page, select the **New SQL Query** icon.
 
+
+
+2. In the SQL Query editor, review the default query () and use the **Execute Query** button to run it.
+```sql
+SELECT * FROM c  
+```
+3. Review the results, which includes the full JSON representation of all items.  
+
 ![imagen12](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_2_Explore%20Azure%20Cosmos%20DB/imagenes/8Select.png)
 
-2. In the SQL Query editor, review the default query () and use the **Execute Query** button to run it.SELECT \* FROM c  
-3. Review the results, which includes the full JSON representation of all items.  
 4. Modify the query as follows:
 ```sql
 Sql SELECT * FROM c WHERE CONTAINS(c.name,"Helmet")
 ```
-***Tip**: The NoSQL API uses familiar, SQL-like queries to search JSON documents. lists all items, and filters by text inside a property—useful for quick searches without extra setup.SELECT \* FROM cCONTAINS*
+***Tip**: The NoSQL API uses familiar, SQL-like queries to search JSON documents. lists all items, and filters by text inside a property—useful for quick searches without extra setup. SELECT * FROM c CONTAINS*
 
 5. Use the **Execute Query** button to run the revised query and review the results, which includes JSON entities for any items with a **name** field containing the text “Helmet”.
 
