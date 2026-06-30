@@ -1,15 +1,15 @@
 # **Explore Azure Storage**
 
-**1\. Objetivo del Laboratorio**  
+**📌 1\. Objetivo del Laboratorio**  
 El objetivo principal de este ejercicio es aprender a aprovisionar, configurar y explorar los diferentes servicios de almacenamiento no relacional dentro de una cuenta de Azure Storage. El laboratorio busca que experimentes de forma directa cómo cambia el comportamiento de la gestión de archivos al pasar de un almacenamiento plano (Flat Namespace) a uno jerárquico (Hierarchical Namespace / Data Lake Gen2) , además de comprender el uso de recursos compartidos de archivos.
 
 **2\. Resumen del Ejercicio**  
 El documento guía al usuario a través de un escenario dividido en 4 fases principales:
 
-1. **Creación de la Infraestructura:** Se aprovisiona una cuenta de almacenamiento estándar dentro de un grupo de recursos controlado (dp900-lab-rg).  
-2. **Exploración de Blob Storage (Estructura Plana):** Se crea un contenedor de datos privado y se experimenta con la subida de un archivo JSON. Aquí se demuestra que, en el Blob Storage tradicional, las carpetas son virtuales (no existen objetos de directorio reales, sino solo prefijos en el nombre del archivo).  
-3. **Actualización a Data Lake Storage Gen2:** Se realiza una actualización a nivel de cuenta para activar el "Espacio de nombres jerárquico" (Hierarchical Namespace). Al hacerlo, las carpetas se convierten en directorios reales, habilitando capacidades avanzadas de analítica de Big Data, renombrado seguro y asignación de permisos de estilo Linux (ACL).  
-4. **Uso de Azure Files y Limpieza:** Se crea un recurso compartido de archivos en la nube (Classic file share) y se observa cómo obtener los scripts de conexión nativos para diferentes sistemas operativos. Al final, se elimina todo el grupo de recursos para evitar costes imprevistos.
+1. 🛠️ **Creación de la Infraestructura:** Se aprovisiona una cuenta de almacenamiento estándar dentro de un grupo de recursos controlado (dp900-lab-rg).  
+2. 📁 **Exploración de Blob Storage (Estructura Plana):** Se crea un contenedor de datos privado y se experimenta con la subida de un archivo JSON. Aquí se demuestra que, en el Blob Storage tradicional, las carpetas son virtuales (no existen objetos de directorio reales, sino solo prefijos en el nombre del archivo).  
+3. 🚀  **Actualización a Data Lake Storage Gen2:** Se realiza una actualización a nivel de cuenta para activar el "Espacio de nombres jerárquico" (Hierarchical Namespace). Al hacerlo, las carpetas se convierten en directorios reales, habilitando capacidades avanzadas de analítica de Big Data, renombrado seguro y asignación de permisos de estilo Linux (ACL).  
+4.  🖧 y 🗑️ **Uso de Azure Files y Limpieza:** Se crea un recurso compartido de archivos en la nube (Classic file share) y se observa cómo obtener los scripts de conexión nativos para diferentes sistemas operativos. Al final, se elimina todo el grupo de recursos para evitar costes imprevistos.
 
 **3\. Puntos Clave a Tener en Cuenta (¡Muy Importante para tu ejecución\!)**
 
@@ -22,7 +22,7 @@ El documento guía al usuario a través de un escenario dividido en 4 fases prin
 
 **Borrado Final:** Al terminar, borrar el grupo de recursos dp900-lab-rg eliminará absolutamente todo lo que creaste de un solo golpe, asegurándote de que no se consuma el crédito de tu suscripción. 
 
-## **Realización Laboratorio**
+## 🛠️ **Realización Laboratorio**
 
 En este laboratorio, creará una cuenta de **Azure Storage account**, que es un lugar seguro en la nube para guardar diferentes tipos de datos. Luego explorará sus cuatro servicios principales y verá para qué sirve cada uno:
 
