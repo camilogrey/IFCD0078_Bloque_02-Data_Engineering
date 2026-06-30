@@ -169,7 +169,7 @@ SELECT * FROM c
 
 4. Modify the query as follows:
 ```sql
-Sql SELECT * FROM c WHERE CONTAINS(c.name,"Helmet")
+SELECT * FROM c WHERE CONTAINS(c.name,"Helmet")
 ```
 ***Tip**: The NoSQL API uses familiar, SQL-like queries to search JSON documents. lists all items, and filters by text inside a property—useful for quick searches without extra setup. SELECT * FROM c CONTAINS*
 
