@@ -120,36 +120,35 @@ Ahora que tiene una **Azure Storage account**, puede crear un contenedor para lo
 2. En la página del **Azure portal** de su contenedor de almacenamiento, en el lado izquierdo, en la sección **Data storage**, seleccione **Containers**.  
 3. En la página de **Containers**, seleccione **＋ Add container**. En el panel de **New container**, introduzca el nombre **data**. Tenga en cuenta que el **Anonymous access level** se configura automáticamente en **Private (no anonymous access)** y no se puede cambiar, porque el acceso anónimo está deshabilitado por defecto en la cuenta de almacenamiento. Seleccione **Create**.
 
-![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/10Containers.png)  
+![image10](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/10Containers.png)  
 💡 **Consejo:** El acceso **Private** mantiene seguros sus datos de muestra. El acceso público rara vez se necesita, excepto para sitios web estáticos o escenarios de datos abiertos. Nombrarlo data mantiene este ejemplo simple y legible.
 
 4. Cuando se haya creado el contenedor **data**, verifique que aparece en la lista de la página **Containers**.  
-    ![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/11Containers.png)  
+    ![image11](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/11Containers.png)  
 5. En el panel del lado izquierdo, en la sección superior, seleccione **Storage browser**. Esta página proporciona una interfaz basada en el navegador que puede utilizar para trabajar con los datos de su cuenta de almacenamiento.  
 6. En la página del **storage browser**, seleccione **Blob containers** y verifique que su contenedor data aparece en la lista.  
 7. Seleccione el contenedor **data** y observe que está vacío.  
-    ![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/12StorageBrowser.png)
+    ![image12](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/12StorageBrowser.png)
 
 8. Seleccione **＋ Add Directory** y lea la información sobre las carpetas antes de crear un nuevo directorio llamado products.  
 9. En el **storage browser**, verifique que la vista actual muestra el contenido de la carpeta products que acaba de crear; observe que las "rutas de navegación" (*breadcrumbs*) en la parte superior de la página reflejan la ruta Blob containers \> data \> products.  
-    ![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/13products.png)  
-10. En las rutas de navegación, seleccione data para cambiar al contenedor data, y note que **no contiene una carpeta llamada products.** Las carpetas en el **blob storage** son virtuales y solo existen como parte de la ruta de un **blob**. ¡Dado que la carpeta products no contenía **blobs**, en realidad no está ahí\!
+    ![image13](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/13products.png)  
+10. En las rutas de navegación, seleccione data para cambiar al contenedor **data**, y note que **no contiene una carpeta llamada products.** Las carpetas en el **blob storage** son virtuales y solo existen como parte de la ruta de un **blob**. ¡Dado que la carpeta products no contenía **blobs**, en realidad no está ahí\!
 
-![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/14NOproducts.png)
+![image14](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/14NOproducts.png)
 💡 **Consejo:** Un espacio de nombres plano (*flat namespace*) significa que los directorios son solo prefijos de nombre (products/file.json). Este diseño permite una escala masiva porque el servicio indexa los nombres de los **blobs** en lugar de mantener una estructura de árbol real.
 
 11. Utilice el botón **⤒ Upload** para abrir el panel **Upload blob**. En el panel **Upload blob**, seleccione el archivo product1.json que guardó previamente en su ordenador local. Luego, en la sección **Advanced**, en el cuadro **Upload to folder**, introduzca product\_data y seleccione el botón **Upload**.
 
-![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/15Upload.png)  
+![image15](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/15Upload.png)  
 12\. 💡 **Consejo:** Proporcionar un nombre de carpeta durante la carga crea automáticamente la ruta virtual, lo que ilustra que la presencia de un **blob** hace que aparezca la "carpeta".
 
 13. Cierre el panel **Upload blob** si aún está abierto, y verifique que se ha creado una carpeta virtual product\_data en el contenedor data.
-
-![Screenshot of the data container showing the product\_data virtual folder.][image12]
-
 14. Seleccione la carpeta product\_data y verifique que contiene el **blob** product1.json que subió.  
 15. En el lado izquierdo, en la sección **Data storage**, seleccione **Containers**.  
-16. Abra el contenedor data y verifique que la carpeta product\_data que creó aparece en la lista.  
+16. Abra el contenedor data y verifique que la carpeta product\_data que creó aparece en la lista.
+![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/16RevFichero.png)  
+
 17. Seleccione el icono de los tres puntos (**‧‧‧**) en el extremo derecho de la carpeta y note que el menú no muestra ninguna opción. Las carpetas en un contenedor de **blob** con espacio de nombres plano son virtuales y no se pueden gestionar.
 
 💡 **Consejo:** No existe un objeto de directorio real, por lo que no hay operaciones de cambio de nombre o permisos; estas requieren un espacio de nombres jerárquico (**hierarchical namespace**).
@@ -166,7 +165,7 @@ El soporte de **Data Lake Store Gen2** le permite utilizar carpetas jerárquicas
 2. En la página del **Azure portal** de su cuenta de almacenamiento, en el lado izquierdo, desplácese hacia abajo hasta la sección **Settings** y seleccione **Data Lake Gen2 upgrade**.  
 3. En la página **Data Lake Gen2 upgrade**, expanda y complete cada paso para actualizar su cuenta de almacenamiento para habilitar el espacio de nombres jerárquico y admitir **Azure Data Lake Storage Gen**. Esto puede tardar algún tiempo.
 
-![Screenshot of the Data Lake Gen2 upgrade page showing the three upgrade steps: review account changes, validate account, and upgrade account.][image13]  
+![image17](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/17UpgradeGen2.png)   
 💡 **Consejo:** La actualización es un cambio de capacidad a nivel de cuenta; los datos permanecen, pero la semántica del directorio cambia para admitir operaciones avanzadas.
 
 4. Cuando se complete la actualización, en el panel del lado izquierdo, en la sección superior, seleccione **Storage browser** y navegue de regreso a la raíz de su contenedor de **blob** data, que aún contiene la carpeta product\_data.  
@@ -174,14 +173,14 @@ El soporte de **Data Lake Store Gen2** le permite utilizar carpetas jerárquicas
 6. Utilice el botón **⤒ Upload** para abrir el panel **Upload blob**.  
 7. En el panel **Upload blob**, seleccione el archivo product2.json que guardó en su ordenador local. A continuación, seleccione el botón **Upload**.  
 8. Cierre el panel **Upload blob** si aún está abierto, y verifique que la carpeta product\_data ahora contiene el archivo product2.json.  
-    ![Screenshot of the product\_data folder containing both product1.json and product2.json.][image14]
+    ![image18](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/17UpgradeGen2-1.png)
 
 💡 **Consejo:** Añadir un segundo archivo después de la actualización confirma la continuidad sin interrupciones: los **blobs** existentes siguen funcionando y los nuevos obtienen beneficios jerárquicos como las ACL (Listas de Control de Acceso) de directorio.
 
 9. En el lado izquierdo, en la sección **Data storage**, seleccione **Containers**.  
 10. Abra el contenedor data y verifique que la carpeta product\_data que creó aparece en la lista.  
 11. Seleccione el icono de los tres puntos (**‧‧‧**) en el extremo derecho de la carpeta y note que, con el espacio de nombres jerárquico habilitado, puede realizar tareas de configuración a nivel de carpeta, incluyendo cambiar el nombre de las carpetas y establecer permisos (**Manage ACL**).  
-     ![][image15]
+     ![image18](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/18UpgradeGen2-1.png)
 
 💡 **Consejo:** Las carpetas reales le permiten aplicar seguridad de mínimo privilegio con granularidad de carpeta, renombrar de forma segura y acelerar los listados recursivos en comparación con el escaneo de miles de nombres de **blobs** con prefijo.
 
@@ -197,16 +196,16 @@ El soporte de **Data Lake Store Gen2** le permite utilizar carpetas jerárquicas
 
 1. En la página del **Azure portal** de su cuenta de almacenamiento, en el lado izquierdo, inicie sesión en la sección **Data storage**, seleccione **Classic file shares**.  
 2. En la página de **Classic file shares**, seleccione **＋ Classic file share**. En la pestaña **Basics**, introduzca el nombre files y deje el **Access tier** configurado en **Transaction optimized**.  
-    ![][image16]  
+  ![image18](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/19UpgradeGen2-1-1.png) 
 3. Seleccione **Next: Backup \>** y desmarque la casilla de verificación **Enable backup** para deshabilitar la copia de seguridad. Luego seleccione **Review \+ create**, y en la pestaña **Review \+ create**, seleccione **Create**.  
-    ![][image17]
+    ![image18](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/19UpgradeGen2-2-1.png)
 
 💡 **Consejo:** Deshabilitar la copia de seguridad mantiene bajos los costes para un entorno de laboratorio de corta duración; la habilitaría para la resiliencia en producción.
 
 4. Cuando se haya creado el recurso compartido files, vuelva a la página de **Classic file shares** y abra su nuevo recurso compartido files.  
 5. En la parte superior de la página, seleccione **Connect**. Luego, en el panel **Connect**, note que hay pestañas para los sistemas operativos comunes (Windows, Linux y macOS) que contienen scripts que puede ejecutar para conectarse a la carpeta compartida desde un ordenador cliente.
 
-![Screenshot of the Connect pane for the files share with Windows, Linux, and macOS tabs showing the connection script.][image18]  
+![image18](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/19UpgradeGen2-2-1.png)  
 💡 **Consejo:** Los scripts generados muestran exactamente cómo montar el recurso compartido utilizando comandos nativos de la plataforma, ilustrando patrones de acceso híbridos desde máquinas virtuales, contenedores o servidores locales (*on-prem*).
 
 6. Cierre el panel **Connect** y luego cierre la página de files para volver a la página de **Classic file shares** de su cuenta de almacenamiento de Azure.
@@ -216,7 +215,8 @@ El soporte de **Data Lake Store Gen2** le permite utilizar carpetas jerárquicas
 Cuando haya terminado de explorar **Azure Storage**, debe eliminar los recursos que creó para no incurrir en más costes.
 
 1. En el **Azure portal**, navegue al grupo de recursos que creó al inicio del laboratorio (por ejemplo, dp900-lab-rg).  
-2. Seleccione **Delete resource group**, confirme la eliminación introduciendo el nombre del grupo de recursos y seleccione **Delete**.![][image19]
+2. Seleccione **Delete resource group**, confirme la eliminación introduciendo el nombre del grupo de recursos y seleccione **Delete**.
+![][image19]
 
 💡 **Consejo:** Eliminar el grupo de recursos quita la cuenta de almacenamiento y todo lo que hay dentro en un solo paso. Esta es la forma más rápida de asegurarse de que no quede nada en ejecución y costando dinero.
 
