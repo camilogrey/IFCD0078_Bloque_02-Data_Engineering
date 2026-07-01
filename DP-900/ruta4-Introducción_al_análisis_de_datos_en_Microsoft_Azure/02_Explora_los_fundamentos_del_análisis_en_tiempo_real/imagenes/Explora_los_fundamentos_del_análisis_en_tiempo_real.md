@@ -240,8 +240,10 @@ En este módulo, aprendiste a:
 
 ---
 
-⬅️ **Anterior:** [01. Explora los fundamentos del análisis a gran escala](DP-900/ruta4-Introducción_al_análisis_de_datos_en_Microsoft_Azure/01_Explora_los_fundamentos_del_análisis_a_gran_escala/01_Explora_los_fundamentos_del_análisis_a_gran_escala.md)
+<=======
+⬅️ **Anterior:** [01. Explora los fundamentos del análisis a gran escala](../01_Explora_los_fundamentos_del_análisis_a_gran_escala/01_Explora_los_fundamentos_del_análisis_a_gran_escala.md)
+>>>>>>> 795de3388ac3c03d69d95bd87a383e2ee8540de7
 
 🏠 **Inicio del módulo:** [README](../README.md)
 
-➡️ **Siguiente:** [03. Explora los fundamentos de la visualización de datos](../03_Visualizacion_de_datos/03_Explora_los_fundamentos_de_la_visualización_de_datos.md)
+➡️ **Siguiente:** [03. Explora los fundamentos de la visualización de datos](../03_Explora_los_fundamentos_de_la_visualización_de_datos/03_Explora_los_fundamentos_de_la_visualización_de_datos.md)
