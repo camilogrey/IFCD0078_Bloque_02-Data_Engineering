@@ -240,9 +240,8 @@ En este módulo, aprendiste a:
 
 ---
 
-<=======
+
 ⬅️ **Anterior:** [01. Explora los fundamentos del análisis a gran escala](../01_Explora_los_fundamentos_del_análisis_a_gran_escala/01_Explora_los_fundamentos_del_análisis_a_gran_escala.md)
->>>>>>> 795de3388ac3c03d69d95bd87a383e2ee8540de7
 
 🏠 **Inicio del módulo:** [README](../README.md)
 
