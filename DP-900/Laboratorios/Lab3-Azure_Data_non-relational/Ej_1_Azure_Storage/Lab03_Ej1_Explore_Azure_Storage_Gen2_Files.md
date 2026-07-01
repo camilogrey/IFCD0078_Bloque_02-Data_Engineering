@@ -103,11 +103,15 @@ Estas opciones retienen los archivos eliminados para su posterior recuperación,
  
 
 5. Continúe a través de las páginas restantes de **Next \>** sin cambiar ninguno de los ajustes por defecto. Luego, en la página **Review**, espere a que se validen sus selecciones y seleccione **Create** para crear su **Azure Storage account**.
+
 ![image6](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/06CreateAccount.png)
+
 ![image7](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/07CreateAccount.png)
+
 ![image8](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/08CreateAccount.png)
 
 6. Espere a que se complete el despliegue. A continuación, seleccione **Go to resource** para abrir la cuenta de almacenamiento que se ha desplegado.  
+
 ![image9](/DP-900/Laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/imagenes/09CreateAccount.png)
 
 ## **Explore blob storage**
