@@ -23,8 +23,9 @@ Los laboratorios son guías paso a paso diseñadas para afianzar los conocimient
     * 🗃️ **[Laboratorio: Explore Azure SQL Database - MYSQL ](Explore_Azure_SQL_Database/Azure-SQL_Database/Azure-SQL_Database.md)**
 
 * 🗃️ **Laboratorios: Explore Azure No relacional
-    * 🗃️ **[Laboratorio: Explore Azure Storage](DP-900/laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/Lab03_Ej1_Explore_Azure_Storage_Gen2_Files.md)**
-    * 📦 **[Laboratorio: Explore Azure Cosmos DB](mangeldelcampo/IFCD0078_Bloque_02-Data_Engineering/DP-900/laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/L3Ej2ExploreAzureCosmosDB.md)**
+    * 🗃️ **[Laboratorio: Explore Azure Storage](/DP-900/Introducción_a_Microsoft%20Azure_datos_no_relacionales/1Explore_Azure_Storage_para_datos_no_relacionales/Explore_Azure_Storage_para_datos_no_relacionales.md)**
+    * 📦 **[Laboratorio: Explore Azure Cosmos DB](/DP-900/laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/L3Ej2ExploreAzureCosmosDB.md)**
+
     
 
 * 🗃️ **Laboratorios: Ánalisis y visualización de Datos
