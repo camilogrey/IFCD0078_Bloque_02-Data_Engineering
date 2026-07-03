@@ -28,6 +28,6 @@ El proyecto sigue una convención estricta de carpetas para garantizar que todos
 Para más detalles sobre las reglas de diseño, formatos de alerta (`> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`), tablas, código y traducción, consulta la guía oficial del proyecto:
 
 📝 **[Leer la GUÍA DE ESTILO completa](/DP-900/GUIA_DE_ESTILO.md)**
-
+🏠 **Inicio del módulo:** [README](../README.md)
 ---
 *Este material ha sido procesado y adaptado automáticamente a formato Markdown optimizado, respetando las rutas relativas de navegación estipuladas para el curso DP-900.*
