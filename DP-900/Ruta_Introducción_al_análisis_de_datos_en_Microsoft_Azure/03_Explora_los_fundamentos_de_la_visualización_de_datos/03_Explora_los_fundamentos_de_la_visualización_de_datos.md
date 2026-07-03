@@ -210,4 +210,4 @@ En este módulo, aprendiste a:
 
 ⬅️ **Anterior:** [02. Explora los fundamentos del análisis en tiempo real](../02_Explora_los_fundamentos_del_análisis_en_tiempo_real/Explora_los_fundamentos_del_análisis_en_tiempo_real.md)
 
-🏠 **Inicio del módulo:** [README](../README.md)
+🏠 **Inicio del módulo:** [README](../../readme.md)
