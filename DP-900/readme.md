@@ -25,6 +25,8 @@ Los laboratorios son guías paso a paso diseñadas para afianzar los conocimient
 * 🗃️ **Laboratorios: Explore Azure No relacional
     * 🗃️ **[Laboratorio: Explore Azure Storage](DP-900/laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/Lab03_Ej1_Explore_Azure_Storage_Gen2_Files.md)**
     * 📦 **[Laboratorio: Explore Azure Cosmos DB](DP-900/laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/L3Ej2ExploreAzureCosmosDB.md)**
+    
+
 * 🗃️ **Laboratorios: Ánalisis y visualización de Datos
 * 🏗️ **[Laboratorio: Explore data analytics in Microsoft Fabric](laboratorios/Explore_data_analytics_in_Microsoft_Fabric/Explore_data_analytics_in_Microsoft_Fabric.md)**
 * ⏱️ **[Laboratorio: Explore real-time analytics in Microsoft Fabric](laboratorios/Explore_real_time_analytics_in_Microsoft_Fabric/Explore_real_time_analytics_in_Microsoft_Fabric.md)**
