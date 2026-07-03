@@ -17,10 +17,11 @@ Esta ruta de aprendizaje te ayuda a prepararte para la certificación **Azure Da
 ### 🔬 Laboratorios Prácticos
 Los laboratorios son guías paso a paso diseñadas para afianzar los conocimientos teóricos trabajando directamente en entornos reales (Portal de Azure, Microsoft Fabric, Power BI, etc.).
 
-* 🗃️ **[Laboratorio: Explore Azure SQL Database](Explore_Azure_SQL_Database/Explore_Azure_SQL_Database.md)**
-    * 🗃️ **[Laboratorio: Explore Azure SQL Database - MYSQL ](Explore_Azure_SQL_Database/Azure-MySQL/2Azure-MySQL.md)**
-    * 🗃️ **[Laboratorio: Explore Azure SQL Database - PostgreSql ](Explore_Azure_SQL_Database/Azure-PostgreSql/Azure_PostgreSQL.md)**
-    * 🗃️ **[Laboratorio: Explore Azure SQL Database - MYSQL ](Explore_Azure_SQL_Database/Azure-SQL_Database/Azure-SQL_Database.md)**
+* 🗃️ **[Laboratorio: Explore Azure SQL Database
+    * 🗃️ **[Laboratorio: Explore Azure SQL Database - SQL Database ](/DP-900/laboratorios/Explore_Azure_SQL_Database/Azure-SQL_Database/Azure-SQL_Database.md)**
+    * 🗃️ **[Laboratorio: Explore Azure SQL Database - PostgreSql ](/DP-900/laboratorios/Explore_Azure_SQL_Database/Azure-PostgreSql/Azure_PostgreSQL.md)**
+    * 🗃️ **[Laboratorio: Explore Azure SQL Database - MYSQL ](/DP-900/laboratorios/Explore_Azure_SQL_Database/Azure-MySQL/2Azure-MySQL.md)**
+    
 
 * 🗃️ **Laboratorios: Explore Azure No relacional
     * 🗃️ **[Laboratorio: Explore Azure Storage](/DP-900/Introducción_a_Microsoft%20Azure_datos_no_relacionales/1Explore_Azure_Storage_para_datos_no_relacionales/Explore_Azure_Storage_para_datos_no_relacionales.md)**
@@ -29,9 +30,9 @@ Los laboratorios son guías paso a paso diseñadas para afianzar los conocimient
     
 
 * 🗃️ **Laboratorios: Ánalisis y visualización de Datos
-* 🏗️ **[Laboratorio: Explore data analytics in Microsoft Fabric](laboratorios/Explore_data_analytics_in_Microsoft_Fabric/Explore_data_analytics_in_Microsoft_Fabric.md)**
-* ⏱️ **[Laboratorio: Explore real-time analytics in Microsoft Fabric](laboratorios/Explore_real_time_analytics_in_Microsoft_Fabric/Explore_real_time_analytics_in_Microsoft_Fabric.md)**
-* 📈 **[Laboratorio: Explore fundamentals of data visualization with Power BI](laboratorios/Explore_fundamentals_of_data_visualization_with_Power_BI/Explore_fundamentals_of_data_visualization_with_Power_BI.md)**
+    * 🏗️ **[Laboratorio: Explore data analytics in Microsoft Fabric](laboratorios/Explore_data_analytics_in_Microsoft_Fabric/Explore_data_analytics_in_Microsoft_Fabric.md)**
+    * ⏱️ **[Laboratorio: Explore real-time analytics in Microsoft Fabric](laboratorios/Explore_real_time_analytics_in_Microsoft_Fabric/Explore_real_time_analytics_in_Microsoft_Fabric.md)**
+    * 📈 **[Laboratorio: Explore fundamentals of data visualization with Power BI](laboratorios/Explore_fundamentals_of_data_visualization_with_Power_BI/Explore_fundamentals_of_data_visualization_with_Power_BI.md)**
 
 ---
 
