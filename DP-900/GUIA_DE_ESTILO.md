@@ -92,7 +92,7 @@ Todos los archivos `.md` (teoría y laboratorios) deben finalizar con un bloque 
 
 ⬅️ **Anterior:** [Nombre del recurso anterior](../Carpeta_Anterior/Archivo_Anterior.md)
 
-🏠 **Inicio del módulo:** [README](../../README.md)
+🏠 **Inicio del módulo:** [README](../README.md)
 
 ➡️ **Siguiente:** [Nombre del siguiente recurso](../Carpeta_Siguiente/Archivo_Siguiente.md)
 ```
