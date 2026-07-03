@@ -205,6 +205,6 @@ Una vez finalizada la exploración de las características de Microsoft Fabric, 
 
 ⬅️ **Anterior:** [Explore Azure Cosmos DB](../Explore_Azure_Cosmos_DB/Explore_Azure_Cosmos_DB.md)
 
-🏠 **Inicio del módulo:** [README](../../README.md)
+🏠 **Inicio del módulo:** [README](../../Lab04readme.md)
 
 ➡️ **Siguiente:** [Explore real-time analytics in Microsoft Fabric](../Explore_real_time_analytics_in_Microsoft_Fabric/Explore_real_time_analytics_in_Microsoft_Fabric.md)
