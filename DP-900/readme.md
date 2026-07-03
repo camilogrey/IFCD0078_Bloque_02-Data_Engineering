@@ -22,9 +22,10 @@ Los laboratorios son guías paso a paso diseñadas para afianzar los conocimient
     * 🗃️ **[Laboratorio: Explore Azure SQL Database - PostgreSql ](Explore_Azure_SQL_Database/Azure-PostgreSql/Azure_PostgreSQL.md)**
     * 🗃️ **[Laboratorio: Explore Azure SQL Database - MYSQL ](Explore_Azure_SQL_Database/Azure-SQL_Database/Azure-SQL_Database.md)**
 
-* 🗃️ **[Laboratorio: Explore Azure No relacional]
+* 🗃️ **Laboratorios: Explore Azure No relacional
     * 🗃️ **[Laboratorio: Explore Azure Storage](DP-900/laboratorios/Lab3-Azure_Data_non-relational/Ej_1_Azure_Storage/Lab03_Ej1_Explore_Azure_Storage_Gen2_Files.md)**
     * 📦 **[Laboratorio: Explore Azure Cosmos DB](DP-900/laboratorios/Lab3-Azure_Data_non-relational/Ej_2_ExploreAzureCosmosDB/L3Ej2ExploreAzureCosmosDB.md)**
+* 🗃️ **Laboratorios: Ánalisis y visualización de Datos
 * 🏗️ **[Laboratorio: Explore data analytics in Microsoft Fabric](laboratorios/Explore_data_analytics_in_Microsoft_Fabric/Explore_data_analytics_in_Microsoft_Fabric.md)**
 * ⏱️ **[Laboratorio: Explore real-time analytics in Microsoft Fabric](laboratorios/Explore_real_time_analytics_in_Microsoft_Fabric/Explore_real_time_analytics_in_Microsoft_Fabric.md)**
 * 📈 **[Laboratorio: Explore fundamentals of data visualization with Power BI](laboratorios/Explore_fundamentals_of_data_visualization_with_Power_BI/Explore_fundamentals_of_data_visualization_with_Power_BI.md)**
