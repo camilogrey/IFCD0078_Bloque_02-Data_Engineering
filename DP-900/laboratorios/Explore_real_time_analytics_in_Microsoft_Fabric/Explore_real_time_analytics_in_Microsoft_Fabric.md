@@ -225,6 +225,6 @@ Este laboratorio ha supuesto un recorrido integral por el procesamiento de anal�
 
 ⬅️ **Anterior:** [Explore data analytics in Microsoft Fabric](../Explore_data_analytics_in_Microsoft_Fabric/Explore_data_analytics_in_Microsoft_Fabric.md)
 
-🏠 **Inicio del módulo:** [README](../../Lab04readme.md)
+🏠 **Inicio del módulo:** [README](../../README.md)
 
 ➡️ **Siguiente:** [Explore fundamentals of data visualization with Power BI](../Explore_fundamentals_of_data_visualization_with_Power_BI/Explore_fundamentals_of_data_visualization_with_Power_BI.md)
