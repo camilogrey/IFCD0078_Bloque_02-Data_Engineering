@@ -1,9 +1,10 @@
 # DP-900
 
 
-Esta ruta de aprendizaje te ayuda a prepararte para la certificación **Azure Data Fundamentals**.
+Esta ruta de aprendizaje te ayuda a prepararte para la certificación [**Azure Data Fundamentals**](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/?practice-assessment-type=certification)
 
-# Módulos de esta ruta de aprendizaje Microsoft Azure Datos No relacionales
+# Azure Datos No relacionales
+Módulos de esta ruta de aprendizaje Microsoft 
 
 
 
