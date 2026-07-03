@@ -21,7 +21,7 @@ Esta ruta de aprendizaje te ayuda a prepararte para la certificación **Azure Da
 
 
 
-## Explora los fundamentos del análisis a gran escala
+## Explora los fundamentos del análisis a gran escala 
 
 Las organizaciones utilizan plataformas analíticas para crear soluciones de análisis de datos a gran escala que generan información valiosa e impulsan el éxito. Microsoft ofrece diversas tecnologías que se pueden combinar para crear una solución de análisis de datos a gran escala.
 

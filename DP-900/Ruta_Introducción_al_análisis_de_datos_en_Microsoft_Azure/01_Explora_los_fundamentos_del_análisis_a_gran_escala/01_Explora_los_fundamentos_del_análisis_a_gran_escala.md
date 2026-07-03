@@ -228,7 +228,7 @@ En este módulo, aprendiste a:
 
 ---
 
-⬅️ **Anterior:** [00. Ruta Introducción al análisis de datos en Microsoft Azure](../00_Ruta_Introducción_al_análisis_de_datos_en_Microsoft_Azure/Introducción_al_análisis_de_datos_en_Microsoft_Azure.md)
+⬅️ **Anterior:** [00. Ruta Introducción al análisis de datos en Microsoft Azure](../Ruta_Introducción_al_análisis_de_datos_en_Microsoft_Azure/Introducción_al_análisis_de_datos_en_Microsoft_Azure.md)
 
 🏠 **Inicio del módulo:** [README](../README.md)
 
