@@ -24,7 +24,7 @@ Los laboratorios son guías paso a paso diseñadas para afianzar los conocimient
 * 🗃️ **[Laboratorio: Explore Azure SQL Database](Explore_Azure_SQL_Database/Explore_Azure_SQL_Database.md)**
 * 📦 **[Laboratorio: Explore Azure Storage](laboratorios/Explore_Azure_Storage/Explore_Azure_Storage.md)**
 * 🪐 **[Laboratorio: Explore Azure Cosmos DB](laboratorios/Explore_Azure_Cosmos_DB/Explore_Azure_Cosmos_DB.md)**
-* 🏗️ **[Laboratorio: Explore data analytics in Microsoft Fabric](Explore_data_analytics_in_Microsoft_Fabric/Explore_data_analytics_in_Microsoft_Fabric.md)**
+* 🏗️ **[Laboratorio: Explore data analytics in Microsoft Fabric](/Explore_data_analytics_in_Microsoft_Fabric/Explore_data_analytics_in_Microsoft_Fabric.md)**
 * ⏱️ **[Laboratorio: Explore real-time analytics in Microsoft Fabric](laboratorios/Explore_real_time_analytics_in_Microsoft_Fabric/Explore_real_time_analytics_in_Microsoft_Fabric.md)**
 * 📈 **[Laboratorio: Explore fundamentals of data visualization with Power BI](laboratorios/Explore_fundamentals_of_data_visualization_with_Power_BI/Explore_fundamentals_of_data_visualization_with_Power_BI.md)**
 
